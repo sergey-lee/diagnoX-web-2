@@ -1,0 +1,94 @@
+.accordion-button::after {
+  display: none !important;
+}
+
+.container-steps {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 0 120px;
+}
+
+.s_blockquote_author {
+  display: flex;
+  gap: 8px;
+}
+
+#wrapwrap:not(.o_header_overlay) header .nav-item > .nav-link > *,
+#wrapwrap:not(.o_header_overlay) header .nav-item > .nav-link::after,
+#wrapwrap:not(.o_header_overlay) header .js_language_selector span,
+#wrapwrap:not(.o_header_overlay) header .badge,
+header.o_header_is_scrolled .nav-item > .nav-link > *,
+header.o_header_is_scrolled .nav-item > .nav-link::after,
+header.o_header_is_scrolled .js_language_selector span,
+header.o_header_is_scrolled .badge,
+header .o_navbar_mobile .nav-item > .nav-link > *,
+header .o_navbar_mobile .nav-item > .nav-link::after,
+header .o_navbar_mobile .js_language_selector span,
+header .o_navbar_mobile .badge {
+  color: #ffffff8c;
+}
+
+header .nav-item > .nav-link > *:hover {
+  color: #ffffffbf !important;
+}
+
+.carousel-indicators [data-target] {
+  box-sizing: content-box;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+
+.navbar-toggler-icon {
+  background-image: var(--navbar-toggler-icon-bg) !important;
+}
+
+.accordion-button .bi-chevron-down {
+  transition-duration: 200ms;
+}
+.accordion-button:not(.collapsed) .bi-chevron-down {
+  transform: var(--accordion-btn-icon-transform);
+  transition-duration: 200ms;
+}
+
+footer .o_colored_level.o_grid_item ul .list-item {
+  color: #43bcff;
+}
+
+.s_social_media_twitter-icon,
+.s_social_media_twitter-icon:focus,
+.s_social_media_twitter-icon:hover {
+  color: #43bcff !important;
+}
+
+@media screen and (max-width: 900px) {
+  .container-steps {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 40px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer .o_grid_mode {
+    grid-auto-rows: auto;
+    grid-template-rows: minmax(50px, 80px) !important;
+  }
+}
