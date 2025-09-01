@@ -392,21 +392,7 @@
                         </a>
                       </div>
                       <div id="add_to_cart_wrap" class="d-inline-flex align-items-center mb-2 me-auto">
-                        <a
-                          data-animation-selector=".o_wsale_product_images"
-                          role="button"
-                          id="add_to_cart"
-                          href="https://www.glucube.com/en_GB/shop/glucube-1099#"
-                          class="btn btn-primary js_check_product a-submit flex-grow-1"
-                          data-oe-model="ir.ui.view"
-                          data-oe-id="2766"
-                          data-oe-field="arch"
-                          data-oe-xpath="/t[1]/t[4]/div[1]/section[1]/div[2]/div[2]/form[1]/div[1]/div[2]/div[1]/a[1]"
-                          data-subscription-plan-id=""
-                          onclick="addToCartAndRedirect(1099)"
-                        >
-                          <i class="bi bi-cart-fill"></i>&nbsp;Add to Cart
-                        </a>
+                        <button type="button" id="add_to_cart" class="btn btn-primary js_check_product a-submit flex-grow-1" onclick="openPopup()"><i class="bi bi-cart-fill"></i>&nbsp;Add to Cart</button>
                       </div>
                       <div id="product_option_block" class="d-flex flex-wrap w-100"></div>
                     </div>
@@ -2126,6 +2112,35 @@
         </div>
       </footer>
     </div>
+
+    <div class="email-input-modal" id="emailInputModal">
+      <div class="email-modal-content">
+        <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">Email</span>
+          <input type="email" name="email" id="buyerEmail" class="form-control" aria-label="Email" aria-describedby="addon-wrapping" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="closePopup()">Cancel</button>
+          <button type="button" class="btn btn-primary" id="saveEmailBtn">Pre-order</button>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./index.js" type="module"></script>
+    <script>
+      const emailModal = document.getElementById("emailInputModal");
+      const buyerEmail = document.getElementById("buyerEmail");
+
+      function openPopup() {
+        emailModal.style.display = "flex";
+        buyerEmail.focus();
+      }
+
+      function closePopup() {
+        buyerEmail.value = "";
+        emailModal.style.display = "none";
+      }
+    </script>
   </body>
 </html>
