@@ -613,26 +613,268 @@
               </div>
             </section>
 
-          <div style="
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
-  gap: 40px; 
-  padding: 30px;
-">
-              <img src="../assets/a1.png" style="width:100px; display:inline-block;">
-              <img src="../assets/a2.png" style="width:100px; display:inline-block;">
-              <img src="../assets/a3.png" style="width:100px; display:inline-block;">
-              <img src="../assets/a4.png" style="width:100px; display:inline-block;">
-              <img src="../assets/a5.png" style="width:100px; display:inline-block;">
-              <img src="../assets/a6.png" style="width:100px; display:inline-block;">
-              <img src="../assets/a7.png" style="width:100px; display:inline-block;">
-              <img src="../assets/a8.png" style="width:100px; display:inline-block;">
-              <img src="../assets/a9.png" style="width:100px; display:inline-block;">
+            <div class="container">
+              <div class="health-grid">
+               
+   <!-- Cholesterol Card -->
+            <div class="health-card cholesterol">
+                <div class="card-header">
+                     <div class="card-icon">
+                        <img src="../assets/cholesterol.png" alt="Liver Health">
+                    </div>
+                    <h2 class="card-title">Cholesterol</h2>
+                </div>
+                <table class="metrics-table">
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Normal Range</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="parameter-name">Total Cholesterol</td>
+                            <td><span class="normal-range">less than 5.2 mmol/L</span></td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">LDL (bad)</td>
+                            <td><span class="normal-range">less than 3.0 mmol/L</span></td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">HDL (good)</td>
+                            <td><span class="normal-range">more than 1.0 mmol/L</span></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-                      
-         
-            
+
+            <!-- Liver Health Card -->
+            <div class="health-card liver">
+                <div class="card-header">
+                      <div class="card-icon">
+                        <img src="../assets/liver.png" alt="Liver Health">
+                    </div>
+                    <h2 class="card-title">Liver Health</h2>
+                </div>
+                <table class="metrics-table">
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Normal Range</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="parameter-name">ALT (SGPT)</td>
+                            <td><span class="normal-range">7-56 U/L</span></td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">AST (SGOT)</td>
+                            <td><span class="normal-range">10-40 U/L</span></td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">Bilirubin</td>
+                            <td><span class="normal-range">0.3-1.2 mg/dL</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Infection Health Card -->
+            <div class="health-card infection">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="../assets/virus.png" alt="Infection Health">
+                    </div>
+                    <h2 class="card-title">Infection Health</h2>
+                </div>
+                <table class="metrics-table">
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Normal Range</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="parameter-name">White Blood Cells</td>
+                            <td><span class="normal-range">4.5-11.0 × 10³/μL</span></td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">C-Reactive Protein</td>
+                            <td><span class="normal-range">less than 3.0 mg/L</span></td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">ESR</td>
+                            <td><span class="normal-range">0-30 mm/hr</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Allergy Health Card -->
+            <div class="health-card allergy">
+                <div class="card-header">
+                       <div class="card-icon">
+                        <img src="../assets/red-eyes.png" alt="Allergy Health">
+                    </div>
+                    <h2 class="card-title">Allergy Health</h2>
+                </div>
+                <table class="metrics-table">
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Normal Range</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="parameter-name">Total IgE</td>
+                            <td><span class="normal-range">less than 100 IU/mL</span></td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">Eosinophils</td>
+                            <td><span class="normal-range">1-4% of WBC</span></td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">Histamine</td>
+                            <td><span class="normal-range">0.3-1.0 ng/mL</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Kidney Function Card -->
+            <div class="health-card kidney">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="../assets/kidney.png" alt="Kidney Function">
+                    </div>
+                    <h2 class="card-title">Kidney Function</h2>
+                </div>
+                <table class="metrics-table">
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Normal Range</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="parameter-name">Creatinine</td>
+                            <td><span class="normal-range">0.6-1.2 mg/dL</span></td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">BUN</td>
+                            <td><span class="normal-range">7-20 mg/dL</span></td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">eGFR</td>
+                            <td><span class="normal-range">more than 60 mL/min</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Heart Health Card -->
+            <div class="health-card heart">
+                <div class="card-header">
+                     <div class="card-icon">
+                        <img src="../assets/heart.png" alt="Heart Health">
+                    </div>
+                    <h2 class="card-title">Heart Health</h2>
+                </div>
+                <table class="metrics-table">
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Normal Range</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="parameter-name">Blood Pressure</td>
+                            <td><span class="normal-range">120/80 mmHg</span></td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">Resting Heart Rate</td>
+                            <td><span class="normal-range">60-100 bpm</span></td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">Troponin</td>
+                            <td><span class="normal-range">less than 0.04 ng/mL</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Joint Health Card -->
+            <div class="health-card joint">
+                <div class="card-header">
+                     <div class="card-icon">
+                        <img src="../assets/broken-bone.png" alt="Joint Health">
+                    </div>
+                    <h2 class="card-title">Joint Health</h2>
+                </div>
+                <table class="metrics-table">
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Normal Range</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="parameter-name">Uric Acid</td>
+                            <td><span class="normal-range">3.5-7.2 mg/dL</span></td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">Rheumatoid Factor</td>
+                            <td><span class="normal-range">less than 14 IU/mL</span></td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">CCP Antibodies</td>
+                            <td><span class="normal-range">less than 20 units</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Brain Health Card -->
+            <div class="health-card brain">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <img src="../assets/brain.png" alt="Brain Health">
+                    </div>
+                    <h2 class="card-title">Brain Health</h2>
+                </div>
+                <table class="metrics-table">
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Normal Range</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="parameter-name">Glucose</td>
+                            <td><span class="normal-range">70-99 mg/dL</span></td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">Vitamin B12</td>
+                            <td><span class="normal-range">200-900 pg/mL</span></td>
+                        </tr>
+                        <tr>
+                            <td class="parameter-name">Folate</td>
+                            <td><span class="normal-range">2.7-17.0 ng/mL</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+          </div>
+          </div>
+
 
             <section class="s_title o_colored_level pb0 pt56 d-lg-block d-none o_snippet_mobile_invisible" data-vcss="001" data-snippet="s_title" data-name="Título" data-invisible="1">
               <div class="s_allow_columns container">
@@ -648,6 +890,8 @@
                 </h2>
               </div>
             </section>
+
+
 
             <section class="s_text_block o_colored_level pb152 pt40" data-snippet="s_text_block" data-name="Texto" id="INFORMACI%C3%93N-DEL-PRODUCTO" data-anchor="true">
               <div class="s_allow_columns container">
