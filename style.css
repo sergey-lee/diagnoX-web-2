@@ -823,7 +823,7 @@ footer .o_colored_level.o_grid_item ul .list-item {
   background-size: cover;       /* масштабирует изображение, сохраняя пропорции */
   background-position: center;  /* центрируем */
   background-repeat: no-repeat; /* чтобы не повторялось */
-  transition: background 0.3s;  
+  /* transition: background 0.3s;   */
 }
 @media (max-width: 768px) {
   .responsive-bg {
